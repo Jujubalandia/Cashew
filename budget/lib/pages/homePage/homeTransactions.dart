@@ -1,6 +1,5 @@
 import 'package:budget/database/tables.dart';
 import 'package:budget/pages/transactionFilters.dart';
-import 'package:budget/widgets/animatedExpanded.dart';
 import 'package:budget/widgets/transactionEntries.dart';
 import 'package:flutter/material.dart';
 

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:budget/database/tables.dart';
 import 'package:budget/pages/autoTransactionsPageEmail.dart';
 import 'package:budget/struct/databaseGlobal.dart';

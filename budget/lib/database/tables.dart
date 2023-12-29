@@ -1,10 +1,9 @@
-import 'dart:developer';
 
-import 'package:budget/functions.dart';
+// ignore_for_file: unused_local_variable
+
 import 'package:budget/pages/addBudgetPage.dart';
 import 'package:budget/pages/homePage/homePageLineGraph.dart';
 import 'package:budget/pages/transactionFilters.dart';
-import 'package:budget/pages/transactionsSearchPage.dart';
 import 'package:budget/struct/databaseGlobal.dart';
 import 'package:budget/struct/firebaseAuthGlobal.dart';
 import 'package:budget/struct/settings.dart';
@@ -6099,7 +6098,7 @@ class FinanceDatabase extends _$FinanceDatabase {
                   // Only apply this tab specific total when searching
                   : (objectives.name
                       .collate(Collate.noCase)
-                      .like("%" + (searchString ?? "") + "%"))) &
+                      .like("%" + (searchString) + "%"))) &
               transactions.walletFk.equals(wallet.walletPk) &
               (isCredit == null
                   ? transactions.type

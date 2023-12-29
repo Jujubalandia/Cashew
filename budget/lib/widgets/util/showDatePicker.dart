@@ -1,5 +1,4 @@
 import 'package:budget/functions.dart';
-import 'package:budget/struct/settings.dart';
 import 'package:flutter/material.dart';
 
 // Currently there is a bug (Flutter 3.13) where the shadow behind date pickers

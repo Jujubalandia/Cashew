@@ -2,7 +2,8 @@ import 'package:budget/database/tables.dart';
 import 'package:budget/main.dart';
 import 'package:budget/pages/subscriptionsPage.dart';
 import 'package:budget/struct/databaseGlobal.dart';
-import 'package:budget/widgets/globalSnackBar.dart';
+import 'package:budget/widgets/globalSnackbar.dart';
+
 import 'package:budget/widgets/navigationFramework.dart';
 import 'package:budget/widgets/openPopup.dart';
 import 'package:budget/widgets/openSnackbar.dart';
@@ -662,8 +663,7 @@ getTotalSubscriptions(AllWallets allWallets, SelectedSubscriptionsType type,
       subscription = subscription.copyWith(
           amount: subscription.amount *
               (amountRatioToPrimaryCurrencyGivenPk(
-                      allWallets, subscription.walletFk) ??
-                  0));
+                      allWallets, subscription.walletFk)));
       if (subscription.periodLength == 0) {
         continue;
       }
@@ -792,6 +792,7 @@ void restartAppPopup(context) async {
           : Icons.restart_alt_rounded,
       barrierDismissible: false,
     );
+  // ignore: dead_code
   } else {
     // Pop all routes, select home tab
     RestartApp.restartApp(context);
@@ -924,7 +925,7 @@ Future<String> getDeviceInfo() async {
       return info.model;
     } else if (Platform.isIOS) {
       IosDeviceInfo info = await deviceInfo.iosInfo;
-      return info.utsname.machine ?? info.model ?? "iOS";
+      return info.utsname.machine;
     } else if (Platform.isLinux) {
       LinuxDeviceInfo info = await deviceInfo.linuxInfo;
       return info.machineId ?? "Linux";
