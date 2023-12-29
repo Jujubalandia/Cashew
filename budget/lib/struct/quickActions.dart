@@ -40,7 +40,6 @@ void runQuickActionsPayLoads(context) async {
       } else if (quickAction.contains("openBudget")) {
         String budgetPk = quickAction.replaceAll("openBudget-", "");
         try {
-          Budget budget = await database.getBudgetInstance(budgetPk);
           pushRoute(
             context,
             BudgetPage(

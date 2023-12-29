@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:budget/colors.dart';
 import 'package:budget/database/tables.dart';
 import 'package:budget/functions.dart';

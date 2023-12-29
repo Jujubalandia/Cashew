@@ -1,3 +1,5 @@
+// ignore_for_file: invalid_use_of_protected_member
+
 import 'package:budget/colors.dart';
 import 'package:budget/database/tables.dart';
 import 'package:budget/pages/addBudgetPage.dart';
@@ -50,6 +52,7 @@ class _SubscriptionsPageState extends State<SubscriptionsPage> {
       onWillPop: () async {
         if ((globalSelectedID.value["Subscriptions"] ?? []).length > 0) {
           globalSelectedID.value["Subscriptions"] = [];
+          // ignore: invalid_use_of_visible_for_testing_member
           globalSelectedID.notifyListeners();
           return false;
         } else {

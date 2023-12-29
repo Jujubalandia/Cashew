@@ -57,6 +57,7 @@ class _UpcomingOverdueTransactionsState
       onWillPop: () async {
         if ((globalSelectedID.value[pageId] ?? []).length > 0) {
           globalSelectedID.value[pageId] = [];
+          // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
           globalSelectedID.notifyListeners();
           return false;
         } else {

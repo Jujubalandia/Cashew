@@ -1,4 +1,4 @@
-// ignore_for_file: invalid_use_of_protected_member, duplicate_ignore
+// ignore_for_file: invalid_use_of_protected_member, duplicate_ignore, invalid_use_of_visible_for_testing_member
 
 import 'dart:math';
 import 'dart:ui';

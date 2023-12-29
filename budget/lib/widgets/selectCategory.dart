@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import
+// ignore_for_file: unused_import, must_call_super
 
 import 'package:budget/colors.dart';
 import 'package:budget/database/tables.dart';

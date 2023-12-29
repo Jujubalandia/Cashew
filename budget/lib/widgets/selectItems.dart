@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super
+
 import 'package:budget/colors.dart';
 import 'package:budget/functions.dart';
 import 'package:budget/widgets/fadeIn.dart';

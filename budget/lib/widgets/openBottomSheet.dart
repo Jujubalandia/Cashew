@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 import 'package:budget/functions.dart';
 import 'package:budget/struct/settings.dart';
 import 'package:budget/widgets/navigationSidebar.dart';

@@ -322,7 +322,7 @@ class _EditHomePageState extends State<EditHomePage> {
                         }
                         updateSettings(
                           "lineGraphStartDate",
-                          (picked ?? appStateSettings["lineGraphDisplayType"])
+                          (picked)
                               .toString(),
                           pagesNeedingRefresh: [],
                           updateGlobalState: false,

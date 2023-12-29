@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'dart:async';
 
 import 'package:budget/colors.dart';
@@ -482,6 +484,7 @@ Future<void> deleteRecentBackups(context, amountToKeep,
     final authHeaders = await googleUser!.authHeaders;
     final authenticateClient = GoogleAuthClient(authHeaders);
     final driveApi = drive.DriveApi(authenticateClient);
+    // ignore: unnecessary_null_comparison
     if (driveApi == null) {
       throw "Failed to login to Google Drive";
     }

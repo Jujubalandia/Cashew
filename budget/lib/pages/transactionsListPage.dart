@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super
+
 import 'package:budget/pages/transactionFilters.dart';
 import 'package:budget/pages/upcomingOverdueTransactionsPage.dart';
 import 'package:budget/struct/settings.dart';

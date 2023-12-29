@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field
+
 import 'package:budget/database/tables.dart';
 import 'package:budget/pages/sharedBudgetSettings.dart';
 import 'package:budget/pages/transactionFilters.dart';

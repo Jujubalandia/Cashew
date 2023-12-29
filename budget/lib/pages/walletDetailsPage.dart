@@ -986,6 +986,7 @@ class _WalletDetailsPageState extends State<WalletDetailsPage>
       onWillPop: () async {
         if ((globalSelectedID.value[listID] ?? []).length > 0) {
           globalSelectedID.value[listID] = [];
+          // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
           globalSelectedID.notifyListeners();
           return false;
         } else {

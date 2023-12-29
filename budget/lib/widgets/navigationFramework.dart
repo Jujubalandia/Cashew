@@ -1,3 +1,5 @@
+// ignore_for_file: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
+
 import 'package:budget/colors.dart';
 import 'package:budget/database/initializeDefaultDatabase.dart';
 import 'package:budget/database/tables.dart';

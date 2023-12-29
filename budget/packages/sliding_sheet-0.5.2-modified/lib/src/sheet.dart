@@ -1,3 +1,5 @@
+// ignore_for_file: public_member_api_docs, duplicate_ignore
+
 import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui';

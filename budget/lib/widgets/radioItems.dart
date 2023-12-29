@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super
+
 import 'package:budget/functions.dart';
 import 'package:budget/struct/settings.dart';
 import 'package:budget/widgets/tappable.dart';

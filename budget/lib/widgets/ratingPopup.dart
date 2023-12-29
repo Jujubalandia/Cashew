@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code, unused_local_variable
+
 import 'dart:async';
 
 import 'package:budget/functions.dart';

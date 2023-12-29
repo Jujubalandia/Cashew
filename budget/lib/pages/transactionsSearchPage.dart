@@ -162,6 +162,7 @@ class TransactionsSearchPageState extends State<TransactionsSearchPage>
       onWillPop: () async {
         if ((globalSelectedID.value["TransactionsSearch"] ?? []).length > 0) {
           globalSelectedID.value["TransactionsSearch"] = [];
+          // ignore: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member
           globalSelectedID.notifyListeners();
           return false;
         } else {
